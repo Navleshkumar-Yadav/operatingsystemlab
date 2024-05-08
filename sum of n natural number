@@ -1,0 +1,10 @@
+  GNU nano 6.2                             ritik.sh                                       
+echo "Enter the number: "
+read y
+sum=0
+for((i=1;i<=y;i++))
+do
+sum=$((sum+i))
+done
+echo $sum
+
