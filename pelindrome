@@ -1,0 +1,18 @@
+echo "Enter  number"
+read x
+
+n=$x
+temp=0
+
+while(($n>0))
+do
+        ns=$((n%10));   
+        temp=$((temp*10 +ns));
+        n=$((n/10));
+done
+if(($temp==$x)); then
+        echo "$x is palindrome"
+else 
+        echo "$x is not a palindrome"
+fi
+       
