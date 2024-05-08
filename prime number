@@ -1,0 +1,15 @@
+echo "Enter the number :"
+read x
+n=2
+for((i=2 ; i<x; i++))
+do
+if((x%i==0)); then
+echo "$x not  prinme nn"
+        break;
+fi
+        n=$n+1; 
+done
+if((n==x)); then
+        echo "$x is a prime no"
+fi
+
